@@ -1,0 +1,209 @@
+{
+	"id": "8066d579-9445-48b8-ade5-885a330fdd32",
+	"name": "POST APIs",
+	"timestamp": "2024-08-04T05:48:11.118Z",
+	"collection_id": "34474791-ecb32a2c-7c18-4842-9128-c88955600cf3",
+	"folder_id": 0,
+	"environment_id": "34474791-c08cf6d5-99ff-4550-906d-9ca69df7266c",
+	"totalPass": 5,
+	"delay": "1",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-04T05:47:56.256Z",
+	"totalFail": 10,
+	"results": [
+		{
+			"id": "56719846-f25d-4c93-be88-608b2e420fde",
+			"name": "Create",
+			"url": "https://reqres.in/api/users",
+			"time": 893,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				540,
+				651,
+				340,
+				334,
+				893
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "d08aef52-d2b9-4e73-9c6b-8565c6d9330a",
+			"name": "Register successful",
+			"url": "https://reqres.in/api/register",
+			"time": 334,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body is correct": false,
+				"Status code name has string": true,
+				"Register successful": false
+			},
+			"testPassFailCounts": {
+				"Body is correct": {
+					"pass": 0,
+					"fail": 5
+				},
+				"Status code name has string": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Register successful": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				387,
+				672,
+				373,
+				351,
+				334
+			],
+			"allTests": [
+				{
+					"Body is correct": false,
+					"Status code name has string": true,
+					"Register successful": false
+				},
+				{
+					"Body is correct": false,
+					"Status code name has string": true,
+					"Register successful": false
+				},
+				{
+					"Body is correct": false,
+					"Status code name has string": true,
+					"Register successful": false
+				},
+				{
+					"Body is correct": false,
+					"Status code name has string": true,
+					"Register successful": false
+				},
+				{
+					"Body is correct": false,
+					"Status code name has string": true,
+					"Register successful": false
+				}
+			]
+		},
+		{
+			"id": "7effbb0d-01a7-47c5-b678-a7a588cef7e9",
+			"name": "Register unsuccessful",
+			"url": "https://reqres.in/api/register",
+			"time": 334,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				376,
+				345,
+				676,
+				332,
+				334
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "41ec69e7-dd5a-4468-bad1-649181027b07",
+			"name": "Login successful",
+			"url": "https://reqres.in/api/login",
+			"time": 712,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				730,
+				514,
+				368,
+				382,
+				712
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "88d9c5b2-9662-43d8-926b-43186e14c4d2",
+			"name": "Login unsuccessful",
+			"url": "https://reqres.in/api/login",
+			"time": 369,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				391,
+				524,
+				704,
+				369,
+				369
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 12001,
+	"collection": {
+		"requests": [
+			{
+				"id": "56719846-f25d-4c93-be88-608b2e420fde",
+				"method": "POST"
+			},
+			{
+				"id": "d08aef52-d2b9-4e73-9c6b-8565c6d9330a",
+				"method": "POST"
+			},
+			{
+				"id": "7effbb0d-01a7-47c5-b678-a7a588cef7e9",
+				"method": "POST"
+			},
+			{
+				"id": "41ec69e7-dd5a-4468-bad1-649181027b07",
+				"method": "POST"
+			},
+			{
+				"id": "88d9c5b2-9662-43d8-926b-43186e14c4d2",
+				"method": "POST"
+			}
+		]
+	}
+}
