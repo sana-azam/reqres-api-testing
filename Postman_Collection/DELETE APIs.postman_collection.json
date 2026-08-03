@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "16665119-21d7-42fc-95ca-aa8773d1b3cb",
+		"name": "DELETE APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34474791"
+	},
+	"item": [
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{web path}}{{api user}}2",
+					"host": [
+						"{{web path}}{{api user}}2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "web path",
+			"value": "https://reqres.in/",
+			"type": "string"
+		},
+		{
+			"key": "api user",
+			"value": "api/users/",
+			"type": "string"
+		}
+	]
+}
